@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pregnancy Appointments Scheduler</title>
 
-    <link rel='stylesheet' href='../css/style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-    <h1>Pregnancy Appointments Scheduler</h1>
-
     <div class="wrapper">
+        <h1 class="main-header">Pregnancy Appointments Scheduler</h1>
+        
         <form>
             <label>Expected Due Date:</label>
             <input type="date" id="exp-due-date-input">
@@ -19,6 +23,6 @@
         <button type="button" onclick="calculateApptDates()">Find Upcoming Appointments</button>
     </div>
 
-    <script src='../js/index.js'></script>
+    <script src='js/index.js'></script>
 </body>
 </html>
