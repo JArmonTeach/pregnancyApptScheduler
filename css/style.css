@@ -71,14 +71,6 @@ body{
     }
 }
 
-/* Header */
-
-.main-header{
-    color: var(--clr-accent);
-    text-shadow: 2px 2px 4px var(var(--clr-dark-shadow));
-    margin: 3vh;
-}
-
 /* Card */
 
 .wrapper{
@@ -91,4 +83,39 @@ body{
     align-items: center;
     flex-direction: column;
     box-shadow: var(--bs);
+}
+
+.main-header{
+    color: var(--clr-light-font);
+    text-shadow: 2px 2px 4px var(var(--clr-dark-shadow));
+    font-family: var(--ff-primary);
+    display: inline-block;
+    padding: 10px 35px;
+}
+
+form input{
+    width: 100%;
+    height: 40px;
+}
+
+form{
+    width: 300px;
+    height: 300px;
+}
+
+form label{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    margin: 15px 0;
+    display: inline-block;
+}
+
+button{
+    background: var(--clr-accent);
+    border: none;
+    display: inline-block;
+    padding: 10px 35px;
+    color: var(--clr-light-background);
+    margin-bottom: 30px;
+    border-radius: 5px;
 }
