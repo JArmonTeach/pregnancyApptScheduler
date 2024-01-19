@@ -1,8 +1,12 @@
+let userExpDateInput = document.getElementById('exp-due-date-input');
+let result = document.getElementById('upcoming-appts');
+
 function calculateApptDates(){
-    const expDueDate = document.getElementById('exp-due-date-input').value;
+    let expDueDate = new Date(userExpDateInput.value);
+    
+    let month = expDueDate.getMonth() + 1; //we are adding a 1 b/c of how it starts with a 0 padding number
+    let day = expDueDate.getUTCDate(); //we're using UTC dates to avoid Daylight Saving Time changes which would return a day early if we only use getDate
+    let year = expDueDate.getFullYear();
 
-
-
-    const upcomingAppts = document.getElementById('upcoming-appts');
-    upcomingAppts.innerHTML = expDueDate;
+    result.innerHTML = `${month} / ${day} / ${year}`;
 }
