@@ -12,7 +12,8 @@
     <link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-    <div class="wrapper">
+    <section class="wrapper">
+       <div class="card">
         <h1 class="main-header">Pregnancy Appointments Scheduler</h1>
         
         <form>
@@ -21,11 +22,15 @@
         </form>
 
         <button type="button" onclick="calculateApptDates()">Find Upcoming Appointments</button>
-    </div>
-
-    <div id="upcoming-appts">
-
-    </div>
+        
+        </div>
+        
+        <div class="results-card">
+            <h2 class="main-header">Upcoming Appointments</h2>
+            <div id="upcoming-appts"></div> 
+        </div>
+    </section>
+    
 
     <script src='js/index.js'></script>
 </body>
