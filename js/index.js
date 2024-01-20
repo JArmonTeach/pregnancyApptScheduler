@@ -11,4 +11,5 @@ function calculateApptDates(){
 
     result.innerHTML = `${month} / ${day} / ${year}`;
     weekAwayCounter.innerHTML = 'test';
+    //TODO: figure out how to insert a new row with test information into the initial table; maybe with insertRow()
 }

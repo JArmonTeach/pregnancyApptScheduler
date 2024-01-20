@@ -164,9 +164,11 @@ button{
 }
 
 td {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
+/* 
+this should make every other row a different color
 tr:nth-child(even) { 
     background-color: var(--clr-light-font); 
-} 
+}  */
