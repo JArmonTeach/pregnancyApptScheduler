@@ -157,3 +157,16 @@ button{
     flex-direction: column;
     box-shadow: var(--bs);
 }
+
+.upcoming-dates-table{
+    border-collapse: separate;
+    border-spacing: 50px 0;
+}
+
+td {
+    padding: 10px 0;
+}
+
+tr:nth-child(even) { 
+    background-color: var(--clr-light-font); 
+} 

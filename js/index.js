@@ -1,5 +1,6 @@
 let userExpDateInput = document.getElementById('exp-due-date-input');
 let result = document.getElementById('upcoming-appts');
+let weekAwayCounter = document.getElementById('weeks-away-count');
 
 function calculateApptDates(){
     let expDueDate = new Date(userExpDateInput.value);
@@ -9,4 +10,5 @@ function calculateApptDates(){
     let year = expDueDate.getFullYear();
 
     result.innerHTML = `${month} / ${day} / ${year}`;
+    weekAwayCounter.innerHTML = 'test';
 }
