@@ -15,8 +15,14 @@
     <link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-    
-    <script type="mpy" src="main.py"></script>
+    <div>Enter Expected Due Date: MM/DD/YYYY</div>
+    <input type="text" id="input-date"/>
+
+    <button id="submit-button" type="submit" pys-onClick="calculate_dates">Calculate</button>
+
+    <div id="dates-output"></div>
+
+    <script type="mpy" src="main.py" config="pyscript.json"></script>
 </body>
 </html>
 

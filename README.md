@@ -12,7 +12,8 @@ This website is currently hosted by Github pages and can be found here: TODO
 
 ## Credits
 
-TODO
+  1. Pyscript Documentation: https://pyscript.github.io/docs/2024.1.3/
+  2. Pyscript Documentation from Real Python: https://realpython.com/pyscript-python-in-browser/
 
 ## License 
 
