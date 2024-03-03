@@ -1,11 +1,7 @@
 # pregnancyApptScheduler
 
 ## Project Description 
-This HTML, CSS and JS app that calculates dates based on an initial input date.
-
-HTML5, CSS3 and vanilla JavaScript were used for this project to learn its basic syntax and semantics through the operations of an application that calculates the follow up appointments for a pregnant patient.
-
-A challenge that came about was TODO
+TODO
 
 ## Installation
 This website is currently hosted by Github pages and can be found here: TODO
