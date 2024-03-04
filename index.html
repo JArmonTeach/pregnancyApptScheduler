@@ -15,12 +15,13 @@
     <link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-    <div>Enter Expected Due Date: MM/DD/YYYY</div>
-    <input type="text" id="input-date"/>
+    <h1 class="main-header">Pregnancy Appointments Scheduler</h1>
 
-    <button id="submit-button" type="submit" pys-onClick="calculate_dates">Calculate</button>
-
-    <div id="dates-output"></div>
+    <div class="wrapper">
+        <label for="date-input">Enter the Expected Due Date:</label>
+        <input type="text" id="exp-due-date-input" name="input-name" placeholder="MM/DD/YYYY"></input>
+        <input type="submit" value="Submit">
+    </div>
 
     <script type="mpy" src="main.py" config="pyscript.json"></script>
 </body>
