@@ -18,12 +18,15 @@
     <h1 class="main-header">Pregnancy Appointments Scheduler</h1>
 
     <div class="wrapper">
-        <label for="date-input">Enter the Expected Due Date:</label>
+        <label for="exp-due-date-input">Enter the Expected Due Date:</label>
         <input type="text" id="exp-due-date-input" name="input-name" placeholder="MM/DD/YYYY"></input>
-        <input type="submit" value="Submit">
+
+        <button id="submit-btn" type="submit">Submit</button>
     </div>
 
-    <script type="mpy" src="main.py" config="pyscript.json"></script>
+    <div id="dates-output"></div>
+
+    <script type="py" src="./main.py" config="./pyscript.json"></script>
 </body>
 </html>
 
