@@ -21,12 +21,23 @@
         <label for="exp-due-date-input">Enter the Expected Due Date:</label>
         <input type="text" id="exp-due-date-input" name="input-name" placeholder="MM/DD/YYYY"></input>
 
-        <button id="submit-btn" type="submit">Submit</button>
+        <button id="submit-btn" type="submit" py-Click="show_output()">Submit</button>
     </div>
 
     <div id="dates-output"></div>
 
-    <script type="mpy" src="./main.py" config="./pyscript.json"></script>
+    <!-- <script type="py" src="./main.py" config="./pyscript.json"></script> -->
+    <py-script> 
+             
+        from js import console
+
+        def my_function(*args, **kwargs):
+            text = Element('exp-due-date-input').element.value
+            
+            console.log(f'text: {text}')
+
+            Element('dates-output').element.innerText = text
+    </py-script>
 </body>
 </html>
 
