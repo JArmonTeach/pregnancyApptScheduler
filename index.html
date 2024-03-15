@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pregnancy Appointments Scheduler</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pregnancy Appointments Scheduler</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+        <!--Links needed for Pyscript-->
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+        <link rel='stylesheet' href='style.css'>
+    </head>
 
-    <link rel='stylesheet' href='css/style.css'>
-</head>
-<body>
-    <h1 class="main-header">Pregnancy Appointments Scheduler</h1>
+    <body>
+        <h1 class="main-header">Pregnancy Appointments Scheduler</h1>
 
-    <div class="wrapper">
-        <label for="exp-due-date-input">Enter the Expected Due Date:</label>
-        <input type="text" id="exp-due-date-input" name="input-name" placeholder="MM/DD/YYYY"></input>
+        <div class="wrapper">
+            <label for="exp-due-date-input">Enter the Expected Due Date:</label>
+            <input type="text" id="exp-due-date-input" placeholder="MM/DD/YYYY"></input>
 
-        <button id="submit-btn" type="submit" py-Click="show_output()">Submit</button>
-    </div>
+            <button id="submit-btn" type="submit" pys-Click="show_output">Submit</button>
+        </div>
 
-    <div id="dates-output"></div>
+        <div id="dates-output"></div>
 
-    <script type="py" src="./main.py" config="./pyscript.json"></script>
-</body>
+        <script src="index.js"></script>
+    </body>
 </html>
 
 <!--to create a server to run this file with an external Python file, run 'python -m http.server' in the terminal, then check 'http://localhost:8000/index.html' in the browser-->
